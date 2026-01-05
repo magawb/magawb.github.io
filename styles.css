@@ -12,7 +12,11 @@ body {
 
 .hero {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #1e293b, #020617);
+  background: radial-gradient(circle at top,
+  rgba(30, 41, 59, 0.7),
+  rgba(2, 6, 23, 0.85)), url('fondo.jpg');
+  background-position: center;
+  background-size: cover;
   padding: 40px 20px;
 }
 
@@ -23,11 +27,14 @@ body {
 }
 
 .logo span { color: #22d3ee; }
-
+.logo { max-width: 80px;}
 .hero-content {
-  max-width: 650px;
+  max-width: 750px;
   margin: 120px auto;
   text-align: center;
+}
+.hero-content h1,.hero-content h2 {
+  margin-bottom: 20px;
 }
 
 .section {
@@ -52,6 +59,7 @@ body {
   padding: 30px;
   border-radius: 16px;
   transition: transform .3s;
+  font-size: x-large;
 }
 
 .card:hover {
@@ -97,13 +105,18 @@ body {
 
 .carousel-track {
   display: flex;
+  align-items: center;
   gap: 40px;
   animation: scroll 20s linear infinite;
 }
 
 .client {
-  min-width: 160px;
+  display: flex;
+  flex-direction: column;   /* logo arriba, texto abajo */
+  align-items: center;      /* centra horizontalmente */
+  justify-content: center;  /* centra verticalmente */
   text-align: center;
+  min-width: 160px;         /* ajusta según tu carrusel */
 }
 
 .client img {
@@ -136,4 +149,17 @@ input, textarea {
   padding: 30px;
   text-align: center;
   color: #94a3b8;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.cursor::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }

@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Startup Software</title>
+  <title>Maga Web Business EC</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="hero">
   <nav class="nav">
-    <h1 class="logo">Dev<span>Startup</span></h1>
+    <img class="Logo" src="Logo con letras.png">
     <a href="#contacto" class="btn ghost">Contactar</a>
   </nav>
 
   <div class="hero-content animate">
-    <h2>Construimos software que escala negocios</h2>
-    <p>Web, Mobile & SaaS con estándares de clase mundial.</p>
-    <a href="#servicios" class="btn primary">Ver servicios</a>
+    <h1 id="title" class="cursor">Construimos software que escala negocios</h1>
+    <h2>Web, Mobile & SaaS con estándares de clase mundial</h2>
+    <a href="#servicios" class="btn primary d-inline-block">Ver servicios</a>
   </div>
 </header>
 
 <section id="servicios" class="section">
-  <h3 class="animate">Servicios</h3>
+  <h1 class="animate">Servicios</h1>
   <div class="cards">
     <div class="card animate">💻 Desarrollo Web</div>
     <div class="card animate">📱 Apps Móviles</div>
@@ -32,42 +32,89 @@
 
 <!-- CLIENTES -->
 <section class="section dark">
-  <h3 class="animate">Empresas que confían en nosotros</h3>
+  <h1 class="animate">Empresas que confían en nosotros</h1>
 
   <div class="carousel">
     <div class="carousel-track">
       <div class="client">
-        <img src="https://via.placeholder.com/120" />
-        <span>Cliente Uno</span>
+        <img src="clientes/lacasa.jpg" />
+        <span>La Casa del Librillo</span>
       </div>
       <div class="client">
-        <img src="https://via.placeholder.com/120" />
-        <span>Cliente Dos</span>
+        <img src="clientes/clinica.webp" />
+        <span>Clínica AFAC</span>
       </div>
       <div class="client">
-        <img src="https://via.placeholder.com/120" />
-        <span>Cliente Tres</span>
+        <img src="clientes/uhe.png" />
+        <span>Universidad de los Hemisferios</span>
       </div>
       <div class="client">
-        <img src="https://via.placeholder.com/120" />
-        <span>Cliente Cuatro</span>
+        <img src="clientes/pq.png" />
+        <span>Pausterizadora Quito</span>
+      </div>
+      <div class="client">
+        <img src="clientes/afac.jpg" />
+        <span>Fundación AFAC</span>
+      </div>
+      <div class="client">
+        <img src="clientes/talma.jpg" />
+        <span>TALMA</span>
+      </div>
+      <div class="client">
+        <img src="clientes/tbm.png" />
+        <span>TBM Agencia Digital</span>
+      </div>
+      <div class="client">
+        <img src="clientes/frevinco.jpeg" />
+        <span>Frevinco</span>
+      </div>
+      <div class="client">
+        <img src="clientes/ecuafactu.png" />
+        <span>Ecuafactu</span>
+      </div>
+      <div class="client">
+        <img src="clientes/lacasa.jpg" />
+        <span>La Casa del Librillo</span>
+      </div>
+      <div class="client">
+        <img src="clientes/clinica.webp" />
+        <span>Clínica AFAC</span>
+      </div>
+      <div class="client">
+        <img src="clientes/uhe.png" />
+        <span>Universidad de los Hemisferios</span>
+      </div>
+      <div class="client">
+        <img src="clientes/pq.png" />
+        <span>Pausterizadora Quito</span>
+      </div>
+      <div class="client">
+        <img src="clientes/afac.jpg" />
+        <span>Fundación AFAC</span>
       </div>
     </div>
   </div>
 </section>
 
 <section id="contacto" class="section">
-  <h3 class="animate">Hablemos de tu proyecto</h3>
-  <form class="form animate" action="https://formspree.io/f/XXXXXXX" method="POST">
-    <input type="text" name="name" placeholder="Nombre" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Cuéntanos tu idea"></textarea>
-    <button class="btn primary">Enviar</button>
-  </form>
+  <h1 class="animate">Hablemos de tu proyecto</h1>
+  <form class="form animate" id="contactForm"
+  action="https://docs.google.com/forms/d/1lQGeclvb-VwiC8M04WK5St00Gh861TwfcTABTZenPEo/formResponse"
+  method="POST"
+>
+  <input type="text" name="entry.1926556844" placeholder="Nombre" required>
+  <input type="email" name="entry.1813963012" placeholder="Email" required>
+  <textarea name="entry.1918103444" placeholder="Mensaje" required></textarea>
+  <button class="btn primary">Enviar</button>
+</form>
+
+<p id="success" style="display:none;color:#22c55e;">
+  ✅ Mensaje enviado correctamente
+</p>
 </section>
 
 <footer class="footer">
-  © 2026 DevStartup
+  © 2026 MAGA
 </footer>
 
 <script src="script.js"></script>
