@@ -167,6 +167,6 @@ input, textarea {
 /*RESPONSIVE*/
 @media (max-width: 768px) {
   .carousel-track {
-    animation-duration: 12s;
+      animation: scroll 12s linear infinite;
   }
 }
